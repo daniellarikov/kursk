@@ -1,0 +1,83 @@
+body{
+  background-image: url(https://im.wampi.ru/2023/03/26/2145465494_preview_panorama-2.jpg);
+  background-position-y: 100%;
+}
+.esse a.button{
+ display: inline-block;
+ color: white;
+ font-weight: 700;
+ text-decoration: none;
+ user-select: none;
+ padding: .5em 2em;
+ outline: none;
+ border: 2px solid;
+ border-radius: 1px;
+ transition: 0.2s;
+ position: absolute;
+ display: flex;
+ align-items: center;
+ margin-left: 41.5%;
+ margin-top: 2%;
+ width:17%;
+ height:10%;
+ font-size: 23px;
+}
+
+
+.parallax h1 {
+  padding-top: 2.3em;
+  font-size: 135px;
+  opacity: .8;
+  font-family: 'Russo One', sans-serif;
+  color:#cc2626;
+  margin-left: 50px;
+}
+
+
+
+.esse {
+  position: relative;
+  margin-top: 11%;
+
+  margin-block-end: 8%;
+}
+
+.esse img {
+  width: 50%;
+  border-radius: 20px;
+  position: absolute;
+  margin-left: 25%;
+  height: 102%;
+  box-shadow: 0 10px 10px 0.2px rgb(0, 0, 0);
+}
+.esse h1 {
+  color: black;
+  width: 45%;
+  margin-top: 3%;
+  margin-left: 28%;
+  position: relative;
+  font-size: 23px;
+  padding-top: 1em ;
+  font-family: 'B52', arial;
+  padding-bottom: -2em;
+}
+
+.parallax {
+  background-image: url(https://mtdata.ru/u7/photoC76A/20314066156-0/original.jpg);
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.voice_teg{
+  color: black;
+  font-family: 'B52', arial;
+  font-size: 28px;
+  margin-left: 45%;
+  position: relative;
+}
+.voice{
+  margin-left: 42%;
+}

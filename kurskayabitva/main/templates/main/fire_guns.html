@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>fire_guns</title>
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css"/>
+        <link rel="stylesheet" href="{% static 'main/css/fire_guns-style.css' %}"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        </head>
+    <body>
+        <div class="header">
+            <div class="header__logo"><a href="{% url 'home' %}" style="color: #cc2626">80 лет Курской битве</a></div>
+            <div class="buttons">
+                <a href="">Кнопка 1</a>
+            </div>
+            <div class="buttons">
+                <a href="">Кнопка 2</a>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="{% url 'ground' %}" style="text-decoration-style: none; color: #cc2626;">Вооружение <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content ">
+                    <a href="{% url 'ground' %}">Наземная<br>техника</a>
+                    <a href="{% url 'airplanes' %}">Воздушная<br>техника</a>
+                    <a href="{% url 'fire_guns' %} "style="color:#cc2626;">Огнестрельное<br>оружие</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="widther">
+                <div class="tanks-name" style="padding-top: 3em;">
+                    <table class="text">
+                        <tr>
+                        <td style="text-align: center;">Самозарядная винтовка <br>Токарева (СВТ)</td>
+                        <td class="rightcol" style="text-align: center;">Gewehr 43</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imgs">
+                    <img src="https://ic.wampi.ru/2023/03/31/imageffa70b35a8c11cc7.png" style="float: left; margin-left: 5%; padding-right: auto;">
+                    <img src="https://ic.wampi.ru/2023/03/31/imagec47f4adbcf7b313b.png" style="float: right; margin-right: 5%; padding-left: auto;">
+                </div>
+            </div>
+            <div class="text-inf">
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Самозарядная винтовка</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Тип</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Самозарядная винтовка</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Фёдор Васильевич Токарев</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Компания Walther</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1938—1940 год</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Год создания</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1943 год</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>7,62 мм</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Калибр</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>7,9 мм</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>830 м/с</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Нач. скорость пули</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>775 м/с <br></p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>20—25 выстрелов в минуту</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорострельность</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>30 выстрелов в минуту</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>500 м</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Прицельная дальность</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>500 м</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="widther">
+                <div class="tanks-name" style="padding-top: 3em;">
+                    <table class="text">
+                        <tr>
+                        <td style="text-align: center;">ДШК</td>
+                        <td class="rightcol" style="text-align: center;">MG 43</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imgs">
+                    <img src="https://ic.wampi.ru/2023/03/31/image2c63f0be3613798c.png" style="float: left; margin-left: 5%; padding-right: auto;">
+                    <img src="https://im.wampi.ru/2023/03/31/imaged86192f3a3e7e224.png" style="float: right; margin-right: 5%; padding-left: auto;">
+                </div>
+            </div>
+            <div class="text-inf">
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Cтанковый крупнокалиберный пулемёт</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Тип</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Единый пулемёт</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>	Георгий Семёнович Шпагин <br>Василий Алексеевич Дегтярёв</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Вернер Грунер</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1938 год</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Год создания</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1942 год</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>12,7 мм</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Патрон</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>7,92 мм</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>860 м/с</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Нач. скорость пули</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1 000 м/с <br></p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1 200 выстрелов в минуту</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорострельность</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1 500 выстрелов в минуту</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>3 500 м</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Прицельная дальность</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>400-1000 м</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="widther">
+                <div class="tanks-name" style="padding-top: 3em;">
+                    <table class="text">
+                        <tr>
+                        <td style="text-align: center;">Пистолет-пулемёт <br>Шпагина (ППШ)</td>
+                        <td class="rightcol" style="text-align: center;">MP 38/40</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imgs">
+                    <img src="https://ie.wampi.ru/2023/03/31/image2bba5683220b8122.png" style="float: left; margin-left: 5%; padding-right: auto;">
+                    <img src="https://ic.wampi.ru/2023/03/31/imagea788fb45a63481e7.png" style="float: right; margin-right: 5%; padding-left: auto;">
+                </div>
+            </div>
+        <div class="text-inf">
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Пистолет-пулемет</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Тип</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Пистолет-пулемет</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Георгий Семёнович Шпагин</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Генрих Фольмер</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1940 год</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Год создания</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1939 год</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>7,62 мм</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Калибр</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>9 мм</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>500 м/с</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Нач. скорость пули</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>400 м/с <br></p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1 000 выстрелов в минуту</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорострельность</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>600 выстрелов в минуту</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>200—300 м</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Прицельная дальность</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>100-200 м</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="widther">
+                <div class="tanks-name" style="padding-top: 3em;">
+                    <table class="text">
+                        <tr>
+                        <td style="text-align: center;">Тульский Токарев <BR>(ТТ)</td>
+                        <td class="rightcol" style="text-align: center;">Luger</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imgs">
+                    <img src="https://ie.wampi.ru/2023/03/31/image4fd3fd6a22d96989.png" style="float: left; margin-left: 5%; padding-right: auto;">
+                    <img src="https://ic.wampi.ru/2023/03/31/image9f0fb952166f2098.png" style="float: right; margin-right: 5%; padding-left: auto;">
+                </div>
+            </div>
+            <div class="text-inf">
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Самозарядный пистолет</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Тип</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Самозарядный пистолет</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Фёдор Васильевич Токарев</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Георг Люгер</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1930 год</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Год создания</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1898год</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>7,62 мм</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Калибр</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>9 мм</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>420 м/с</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Нач. скорость пули</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>380 м/с <br></p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>30-35 выстрелов в минуту</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорострельность</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>32 выстрелов в минуту</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>50 м</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Прицельная дальность</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>50 м</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="{% static 'main/js/script-inf-page.js' %}"></script>
+    </body>
+</html>

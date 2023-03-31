@@ -1,0 +1,239 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>airplanes</title>
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css"/>
+        <link rel="stylesheet" href="{% static 'main/css/airplane-style.css' %}"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        </head>
+    <body>
+        <div class="header">
+            <div class="header__logo"><a href="{% url 'home' %}" style="color: #cc2626">80 лет Курской битве</a></div>
+            <div class="buttons">
+                <a href="">Кнопка 1</a>
+            </div>
+            <div class="buttons">
+                <a href="">Кнопка 2</a>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="{% url 'ground' %}" style="text-decoration-style: none; color: #cc2626;">Вооружение <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content ">
+                    <a href="{% url 'ground' %}">Наземная<br>техника</a>
+                    <a href="{% url 'airplanes' %} "style="color:#cc2626;">Воздушная<br>техника</a>
+                    <a href="{% url 'fire_guns' %}">Огнестрельное<br>оружие</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="widther">
+                <div class="tanks-name" style="padding-top: 3em;">
+                    <table class="text">
+                        <tr>
+                        <td style="text-align: center;">Ла 5</td>
+                        <td class="rightcol" style="text-align: center;">FW 190</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imgs">
+                    <img src="https://ie.wampi.ru/2023/03/30/IZOBRAZENIE_2023-03-30_191416538.png" style="float: left; margin-left: 5%; padding-right: auto;">
+                    <img src="https://ie.wampi.ru/2023/03/30/image68a1257f8d7c649d.png" style="float: right; margin-right: 5%; padding-left: auto;">
+                </div>
+            </div>
+            <div class="text-inf">
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Истрибитель</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Тип</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Истрибитель</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Семён Алексеевич Лавочкин</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Курт Танк</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1 чел.</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Экипаж</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1 чел.</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Две 20-мм пушки </p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Вооружение</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>20-мм пушка и 15-мм пулемёт</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>509 км/ч</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорость у земли</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>571 км/ч</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>580 км/ч</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорость на высоте</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>654 км/ч</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>9 500 м</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Максимальная<br>высота</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>9 840 м</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="widther">
+                <div class="tanks-name" style="padding-top: 3em;">
+                    <table class="text">
+                        <tr>
+                        <td style="text-align: center;">Як 9</td>
+                        <td class="rightcol" style="text-align: center;">FW 190</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imgs">
+                    <img src="https://ic.wampi.ru/2023/03/30/image10ac6653134908eb.png" style="float: left; margin-left: 5%; padding-right: auto;">
+                    <img src="https://ie.wampi.ru/2023/03/30/image9c07ec4f397ffa20.png" style="float: right; margin-right: 5%; padding-left: auto;">
+                </div>
+            </div>
+            <div class="text-inf">
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Истрибитель</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Тип</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Истрибитель</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Александр Сергеевич Яковлев</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Компания Messerschmitt</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1 чел.</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Экипаж</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1 чел.</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>20-мм пушка и пулемет 12,7-мм</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Вооружение</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>20-мм пушка и два пулемета 7,92 мм</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>570 км/ч</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорость у земли</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>550 км/ч</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>672 км/ч</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорость на высоте</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>690 км/ч</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>10 500 м</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Максимальная<br>высота</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>12 000 м</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="widther">
+                <div class="tanks-name" style="padding-top: 3em;">
+                    <table class="text">
+                        <tr>
+                        <td style="text-align: center;">Пе 2</td>
+                        <td class="rightcol" style="text-align: center;">HE 111</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imgs">
+                    <img src="https://im.wampi.ru/2023/03/30/imagee54357b25d57502b.png" style="float: left; margin-left: 5%; padding-right: auto;">
+                    <img src="https://ie.wampi.ru/2023/03/30/imageb9d8843f105288f2.png" style="float: right; margin-right: 5%; padding-left: auto;">
+                </div>
+            </div>
+            <div class="text-inf">
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Бомбардировщик</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Тип</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Бомбардировщик</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Владимир Михайлович Петляков</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Эрнест Хейнкель</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>7 чел.</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Экипаж</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>3 чел.</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Две 20-мм пушки и три 12,7 мм пулемета</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Вооружение</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Три 7,92 мм пулемета</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>1 000 кг</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Бомбовая нагрузка <br>(нормальная)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1 500 кг</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>580 км/ч</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Бомбовая нагрузка <br>(предельная)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>654 км/ч</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>9 000 м</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Максимальная<br>высота</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>7 000 м</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="{% static 'main/js/script-inf-page.js' %}"></script>
+    </body>
+</html>
