@@ -1,0 +1,162 @@
+html {
+    background: url(https://im.wampi.ru/2023/03/26/2145465494_preview_panorama-2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: #222222;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: 1s;
+    color: #fff;
+    margin-bottom: 0%;
+    border-radius: 20px;
+  }
+.header__logo {
+    color: #cc2626;
+    filter: contrast(120%);
+    font-size: 30px;
+    font-family: 'Russo One', sans-serif;
+}
+.header_hidden {
+    transform: translateY(-100%);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.buttons {
+    font-size: 110%;
+    font-family: 'Russo One', sans-serif;
+    color: #cc2626;
+    display: block;
+    margin-left: 15%;
+    transition: transform .6s ease;
+
+}
+.buttons:hover , .buttons:hover {
+    color: #cc2626;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+.content {
+    background-color: #222222;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.dropdown {
+    font-size: 110%;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    display: block;
+    margin-left: 15%;
+    transition: transform .6s ease;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropbtn {
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    align-items: center;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.hero-inf {
+    padding-top: 2em;
+    width: 100%;
+}
+
+.hero-inf img {
+    height: 500px;
+    border-radius: 20px;
+}
+
+.text-inf {
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+
+
+
+
+
+.input-group {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.other-groups {
+    padding-top: 2em;
+}
+.hero-esse{
+    padding-bottom: 2em;
+}
+.hero-esse p{
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    margin:auto;
+    font-size: 25px;
+    text-align: center;
+    width: 90%;
+    line-height: 1.7;
+}
+a.change_text{
+    text-decoration: underline overline #cc2626;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+a.change_text:hover{
+    color: #cc2626;
+  }

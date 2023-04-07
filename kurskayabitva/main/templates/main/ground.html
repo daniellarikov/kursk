@@ -16,10 +16,10 @@
         <div class="header">
             <div class="header__logo"><a href="{% url 'home' %}" style="color: #cc2626">80 лет Курской битве</a></div>
             <div class="buttons">
-                <a href="">Кнопка 1</a>
+                <a href="{% url 'heroes' %}">Герои битвы</a>
             </div>
             <div class="buttons">
-                <a href="">Кнопка 2</a>
+                <a href="{% url 'history' %}">Рассказы очевидцев</a>
             </div>
             <div class="dropdown">
                 <a class="dropbtn" href="{% url 'ground' %}" style="text-decoration-style: none; color: #cc2626;">Вооружение <i class="fa fa-caret-down"></i></a>
@@ -30,6 +30,8 @@
                 </div>
             </div>
         </div>
+        <a id="T34"></a>
+        <a id="PANTHER"></a>
         <div class="content">
             <div class="widther">
                 <div class="tanks-name" style="padding-top: 3em;">
@@ -97,7 +99,8 @@
                 </table>
             </div>
         </div>
-
+        <a id="KV"></a>
+        <a id="TIGER"></a>
         <div class="content">
             <div class="widther">
                 <div class="tanks-name" style="padding-top: 3em;">
@@ -166,14 +169,15 @@
             </div>
         </div>
 
-
+        <a id="SU"></a>
+        <a id="FERDINAND"></a>
         <div class="content">
             <div class="widther">
                 <div class="tanks-name" style="padding-top: 3em;">
                     <table class="text">
                         <tr>
                         <td style=" text-align: center;">СУ-152</td>
-                        <td class="rightcol" style="text-align: center;">Ferdinandr</td>
+                        <td class="rightcol" style="text-align: center;">Ferdinand</td>
                         </tr>
                     </table>
                 </div>

@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>heroes</title>
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css"/>
+        <link rel="stylesheet" href="{% static 'main/css/hero-style.css' %}"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        </head>
+    <body>
+        <div class="header">
+            <div class="header__logo"><a href="{% url 'home' %}" style="color: #cc2626">80 лет Курской битве</a></div>
+            <div class="buttons">
+                <a href="{% url 'heroes' %}" style="color: #cc2626">Герои битвы</a>
+            </div>
+            <div class="buttons">
+                <a href="{% url 'history' %}">Рассказы очевидцев</a>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="{% url 'ground' %}" style="text-decoration-style: none; color: white;">Вооружение <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content ">
+                    <a href="{% url 'ground' %}">Наземная<br>техника</a>
+                    <a href="{% url 'airplanes' %}">Воздушная<br>техника</a>
+                    <a href="{% url 'fire_guns' %} ">Огнестрельное<br>оружие</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <table class="hero-inf">
+                <tr>
+                    <td style="padding-left: 4em; float: left; padding-top: 2em;">
+                        <img src="http://i.mycdn.me/i?r=AzFIxPtkV78jcmdRfpoIOyaJdud4QBBoE-tiDKVyCHI6bjO7EuABt8t6j6ROsg0SwU4">
+                    </td>
+                    <td class="text-inf" style="float: right; padding-right: 4em;">
+                        <h1 style="font-size: 40px; vertical-align: top; text-align: center">Михаил Павлович Фролов</h1>
+                        <div class="input-group" style= "padding-top: 2em;">
+                            <div style="padding-top: 1em;"><input type="hidden">Воинское звание - Лейтенант<br></div>
+                            <div class="other-groups"><input type="hidden">Специальность - Командир танковой роты <br></div>
+                            <div class="other-groups"><input type="hidden">Годы жизни - 14 сентября 1916 г. - 9 ноября 1991 г.<br></div>
+                            <div class="other-groups"><input type="hidden">Место рождения - Алтайский край</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class='hero-esse' style="padding-top: 2em;">
+                <p>9 августа после артиллерийской подготовки в районе села Братского батальон вражеской пехоты при поддержке танков предпринял контратаку. Местность была холмистой и плохо просматривалась. Тогда Михаил Павлович взобрался на одну из высот и оттуда определил направление движения вражеских машин. После этого он вывел свой взвод во фланг немецким танкам и внезапно открыл по ним огонь. От первого же залпа загорелись два <a class='change_text' href="{% url 'ground' %}#TIGER">"тигра"</a> и самоходка. Решительные действия лейтенанта позволили танковой роте успешно отбить контратаку врага.</p>
+                <p style="padding-top: 1.5em;">С 7 июля по 16 августа 1943 года танкисты под командованием Михаила Фролова уничтожили десять вражеских танков, четыре орудия, восемь автомашин и более восьмидесяти немецких солдат и офицеров.</p>
+                <p style="padding-top: 1.5em;">На <a class='change_text'href="{% url 'ground' %}#T34">Т 34-85</a>  лейтенант лично уничтожил четыре <a class='change_text' href="{% url 'ground' %}#TIGER">"тигра"</a>. 16 августа 1943 года был тяжело ранен, долго лечился и лишь в конце войны смог возвратиться в строй.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <table class="hero-inf">
+                <tr>
+                    <td style="padding-left: 4em; float: left; padding-top: 2em;">
+                        <img src="https://kki-gr.omsk.muzkult.ru/media/2018/08/20/1230517038/image_image_1894660.jpg">
+                    </td>
+                    <td class="text-inf" style="float: right; padding-right: 4em;">
+                        <h1 style="font-size: 40px; vertical-align: top; text-align: center">Александр Никитович Гайдаш</h1>
+                        <div class="input-group" style= "padding-top: 2em;">
+                            <div style="padding-top: 1em;"><input type="hidden">Воинское звание - Младший лейтенант<br></div>
+                            <div class="other-groups"><input type="hidden">Специальность - Командир огневого взвода <br></div>
+                            <div class="other-groups"><input type="hidden">Годы жизни - 27 августа 1916 г. - 17 января 2008 г.<br></div>
+                            <div class="other-groups"><input type="hidden">Место рождения - Белгородская губерния</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class='hero-esse' style="padding-top: 2em;">
+                <p>18 августа 1943 года танки противника в сопровождении мотопехоты прорвали оборонительные порядки 166-й стрелковой дивизии. Частям соединения грозило окружение. Перед 2-м дивизионом 92-й тяжелой гаубичной артиллерийской бригады была поставлена задача: приостановить продвижение противника. Орудия были подготовлены к стрельбе прямой наводкой в условиях круговой обороны.</p>
+                <p style="padding-top: 1.5em;">Противник перешел в наступление после артиллерийского и авиационного ударов по нашим позициям. Советские артиллеристы открыли прицельный огонь по вражеским танкам, которые зашли в тыл и на фланги огневых позиций дивизиона. В этой тяжелой обстановке исключительное хладнокровие и мужество проявил командир огневого взвода 6-й батареи младший лейтенант Александр Гайдаш. Он умело прикрыл расчеты орудий огнем пулеметов. Выполняя приказы командира взвода, орудийные расчеты под непрерывным вражеским обстрелом быстро и умело маневрировали огнем своих гаубиц. Младший лейтенант был там, где складывалось особенно трудное положение. Несмотря на серьезное ранение, отважный командир продолжал руководить действиями взвода.</p>
+                <p style="padding-top: 1.5em;">За несколько часов боя артиллеристы подбили четыре немецких <a class='change_text' href="{% url 'ground' %}#TIGER">"тигра"</a>, три средних танка, две бронемашины, семь мотоциклов и уничтожили около роты пехоты противника.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <table class="hero-inf">
+                <tr>
+                    <td style="padding-left: 4em; float: left; padding-top: 2em;">
+                        <img src="https://sun9-13.userapi.com/impg/XoOjgF_k_OxCJ4Nqljq7ZJiWzKoGYquV-O4iFw/WCtWxcWY9f8.jpg?size=498x604&quality=96&sign=2a2c390ec36aaa4f03977db83250b0b7&type=album">
+                    </td>
+                    <td class="text-inf" style="float: right; padding-right: 4em;">
+                        <h1 style="font-size: 40px; vertical-align: top; text-align: center">Павел Иванович Шпетный</h1>
+                        <div class="input-group" style= "padding-top: 2em;">
+                            <div style="padding-top: 1em;"><input type="hidden">Воинское звание - Офицер<br></div>
+                            <div class="other-groups"><input type="hidden">Специальность - Командир взвода <br>противотанковых ружей <br></div>
+                            <div class="other-groups"><input type="hidden">Годы жизни - 1913 г. - 13 июля 1943 г.<br></div>
+                            <div class="other-groups"><input type="hidden">Место рождения - Гомельская область</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class='hero-esse' style="padding-top: 2em;">
+                <p>Будучи командиром взвода 284 полка, на южном фасе Курской дуги Павел Иванович вступил в бой 10 июля 1943 года. Это время когда немцы рвались вперед, не считаясь с потерями. Да, сил у противника было немного, но бои шли уже на последней линии обороны и его надо было остановить. 12 июля 1943 года взвод гвардии старшего лейтенанта Шпетного принимал участие в боях за высоту близь населенного пунка Полежаев. Находясь под постоянным огнем, красноармейцам с ПТР приходилось делать несколько выстрелов и спешно менять позицию, пока не прелетел снаряд в ответ. И так раз за разом, выбирая позицию, с которой можно было поразить машину противника наверняка.</p>
+                <p style="padding-top: 1.5em;">Так, в ходе боя 12 июля 1943 года, Павел Иванович пробивает 6 танков противника. А на следующий день бронебойщики: сержант Иван Охранкин, сержант Николай Сухарский, сержант Салимов, сержант Карп Ойя, рядовой Павел Проскуряков и рядовой Гулько под командованием Шпетного подобьют еще 6 бронированных машин в своем последнем бою. А Павел Иванович в момент когда закончились 14.5 миллиметровые патроны, схватил гранату и бросился на танк, подбив седьмую машину. За свой подвиг, совершенный на территории РСФСР, рожденный на территории БССР, украинец был удостоен звания Героя. А бронебойщики, сражавшиеся с ним, награждены орденами Красного Знамени.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <table class="hero-inf">
+                <tr>
+                    <td style="padding-left: 4em; float: left; padding-top: 2em;">
+                        <img src="https://warheroes.ru/content/images/photodocs/353/original/d1fff68097ae39e2803d0f0c55f368c2.jpg">
+                    </td>
+                    <td class="text-inf" style="float: right; padding-right: 4em;">
+                        <h1 style="font-size: 40px; vertical-align: top; text-align: center">Алексей Петрович Маресьев</h1>
+                        <div class="input-group" style= "padding-top: 2em;">
+                            <div style="padding-top: 1em;"><input type="hidden">Воинское звание - Полковник<br></div>
+                            <div class="other-groups"><input type="hidden">Специальность -  Лётчик-истребитель</div>
+                            <div class="other-groups"><input type="hidden">Годы жизни - 20 мая 1916 г. - 18 мая 2001 г.</div>
+                            <div class="other-groups"><input type="hidden">Место рождения - Саратовская губерния</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class='hero-esse' style="padding-top: 2em;">
+                <p>История о подвиге Алексея Маресьева началась задолго до Курской битвы. 5 апреля произошёл роковой случай — во время боевой операции его самолет подбили. Маресьев сумел дотянуть самолет до своей территории через линию фронта, и в 4 км севернее деревни Рабежа при попытке совершить вынужденную посадку в лесу упал с высоты 30 метров.  Когда Алексей попытался встать — то почувствовал дикую боль, понял, что обе ноги сломаны. Тогда собрав силы и волю он пополз в сторону своих. Всего в заснеженном лесу летчик провел 18 суток. Ему приходилось с трудом добывать еду и воду, ночевал летчик в оврагах, дно которых выстилал ельником, им же и укрывался. Его обнаружили жители деревни Плав в Валдайском районе. Врачи ампутировали ему 2 ноги и поставили вместо них протезы.</p>
+                <p style="padding-top: 1.5em;"> В сражении на Курской дуге 19 июля сбивает пикирующий бомбардировщик, 20 июля два немецких истребителя, чем спасает жизни двух советских лётчиков. За этот подвиг Маресьев получил звание Героя Советского Союза.</p>
+            </div>
+        </div>
+        <script src="{% static 'main/js/script-inf-page.js' %}"></script>
+    </body>
+</html>

@@ -11,3 +11,9 @@ def airplanes(request):
 
 def fire_guns(request):
     return render (request, 'main/fire_guns.html')
+
+def heroes(request):
+    return render (request, 'main/heroes-page.html')
+
+def history(request):
+    return render (request, 'main/history-page.html')

@@ -21,7 +21,7 @@
             <h1 class="blend">80 лет Курской битве</h1>
         </div>
         <div class="esse">
-            <img src="https://catherineasquithgallery.com/uploads/posts/2021-03/1614605151_73-p-bumaga-na-belom-fone-82.jpg">
+            <img src="https://yuzhno-sahalinsk.tdfarfor.ru/wa-data/public/shop/products/25/41/14125/images/30772/30772.750x0.jpg">
              <h1>Курская битва проходила летом 1943 года. Это сражение является одним из ключевых в Великой Отечественной войне. Битва стала переломным моментом всей войны и знаменовала полный переход инициативы наступления к Красной армии.</h1>
 
             <h1>Во время сражения советские войска, грамотно подготовив сильнейшую оборону, смогли отбить наступление противника, тем самым заставив его перейти в защиту, после чего почти сразу было организовано контрнаступление Красной армии.</h1>
@@ -33,7 +33,15 @@
             <audio controls class="voice">
                 <source src="{% static 'main/voice/voice-esse.mp3' %}" type="audio/mpeg" />
             </audio>
-            <a href="{% url 'ground' %}" class="button">Узнать больше!</a>
+            <div class = 'check_more'>
+                    <p>Узнай больше!</p>
+                    <div class = 'all_btn'>
+                        <button onclick="document.location='heroes'" class="buttons">Герои битвы</button>
+                        <button onclick="document.location='history'" class="buttons">Рассказы очевидцев</button>
+                        <button onclick="document.location='inform_page'" class="buttons">Вооружение</button>
+                    </div>
+            </div>
+            </div>
         </div>
     </body>
 </html>

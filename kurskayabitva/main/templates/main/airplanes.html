@@ -16,10 +16,10 @@
         <div class="header">
             <div class="header__logo"><a href="{% url 'home' %}" style="color: #cc2626">80 лет Курской битве</a></div>
             <div class="buttons">
-                <a href="">Кнопка 1</a>
+                <a href="{% url 'heroes' %}">Герои битвы</a>
             </div>
             <div class="buttons">
-                <a href="">Кнопка 2</a>
+                <a href="{% url 'history' %}">Рассказы очевидцев</a>
             </div>
             <div class="dropdown">
                 <a class="dropbtn" href="{% url 'ground' %}" style="text-decoration-style: none; color: #cc2626;">Вооружение <i class="fa fa-caret-down"></i></a>
@@ -125,7 +125,7 @@
                     <tr>
                     <td style="padding-left: 5em; text-align: center;"><p>Александр Сергеевич Яковлев</p></td>
                     <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
-                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Компания Messerschmitt</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Вильгельм Мессершмитт</p></td>
                     </tr>
                 </table>
                 <table>
@@ -161,6 +161,74 @@
                     <td style="padding-left: 5em; text-align: center;"><p>10 500 м</p></td>
                     <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Максимальная<br>высота</p></td>
                     <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>12 000 м</p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="widther">
+                <div class="tanks-name" style="padding-top: 3em;">
+                    <table class="text">
+                        <tr>
+                        <td style="text-align: center;">Ил-2</td>
+                        <td class="rightcol" style="text-align: center;">Messerschmitt Bf.109</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imgs">
+                    <img src="https://im.wampi.ru/2023/04/11/imagee70f27569e5272c1.png" style="float: left; margin-left: 5%; padding-right: auto;">
+                    <img src="https://ie.wampi.ru/2023/04/11/IZOBRAZENIE_2023-04-11_153936881.png" style="float: right; margin-right: 5%; padding-left: auto;">
+                </div>
+            </div>
+            <div class="text-inf">
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Штурмовик</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Тип</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Истребитель-штурмовик</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Сергей Владимирович Ильюшин</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Конструктор(ы)</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>Вильгельм Мессершмитт</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>2 чел.</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Экипаж</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>1 чел.</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>Две 20-мм пушки и два пулемета 7,62-мм  </p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Вооружение</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>два пулемета 7,62-мм </p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>396 км/ч</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорость у земли</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>550 км/ч</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>357 км/ч</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Скорость на высоте</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>690 км/ч</p></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                    <td style="padding-left: 5em; text-align: center;"><p>9 500 м</p></td>
+                    <td style="text-align: center; padding-left: 2.5em; padding-right: 2.5em; font-size: 24px;"><p>Максимальная<br>высота</p></td>
+                    <td class="rightcol" style="padding-right: 5em; text-align: center;"><p>9 000 м</p></td>
                     </tr>
                 </table>
             </div>
